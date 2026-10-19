@@ -1,0 +1,231 @@
+{
+  "N": 15,
+  "a": 7,
+  "true_period_r": 4,
+  "recovered_factors": [
+    3,
+    5
+  ],
+  "a11_verification": {
+    "a": 11,
+    "true_period_r": 2,
+    "ideal_probs": {
+      "000": 0.49999999999999956,
+      "001": 0.0,
+      "010": 0.0,
+      "011": 0.0,
+      "100": 0.49999999999999956,
+      "101": 0.0,
+      "110": 0.0,
+      "111": 0.0
+    },
+    "nontrivial_peak_100_factors": [
+      3,
+      5
+    ]
+  },
+  "shots": 4096,
+  "backend_name": "ibm_brisbane (Eagle r3 calibrated noise profile)",
+  "execution_mode": "calibrated_ibm_brisbane_noise_model",
+  "run_date": "2026-10-17",
+  "job_id": "sim-cal-eagle-r3-15a7",
+  "bitstrings": [
+    "000",
+    "001",
+    "010",
+    "011",
+    "100",
+    "101",
+    "110",
+    "111"
+  ],
+  "exact_statevector_probs": {
+    "000": 0.24999999999999978,
+    "001": 0.0,
+    "010": 0.24999999999999978,
+    "011": 0.0,
+    "100": 0.24999999999999978,
+    "101": 0.0,
+    "110": 0.24999999999999978,
+    "111": 0.0
+  },
+  "simulator_counts": {
+    "000": 1036,
+    "001": 0,
+    "010": 1051,
+    "011": 0,
+    "100": 973,
+    "101": 0,
+    "110": 1036,
+    "111": 0
+  },
+  "simulator_probs": {
+    "000": 0.2529296875,
+    "001": 0.0,
+    "010": 0.256591796875,
+    "011": 0.0,
+    "100": 0.237548828125,
+    "101": 0.0,
+    "110": 0.2529296875,
+    "111": 0.0
+  },
+  "hardware_or_noisy_counts": {
+    "000": 943,
+    "001": 90,
+    "010": 904,
+    "011": 69,
+    "100": 1000,
+    "101": 83,
+    "110": 919,
+    "111": 88
+  },
+  "hardware_or_noisy_probs": {
+    "000": 0.230224609375,
+    "001": 0.02197265625,
+    "010": 0.220703125,
+    "011": 0.016845703125,
+    "100": 0.244140625,
+    "101": 0.020263671875,
+    "110": 0.224365234375,
+    "111": 0.021484375
+  },
+  "metrics": {
+    "simulator_in_subspace_prob": 1.0,
+    "noisy_in_subspace_prob": 0.91943359375,
+    "simulator_single_shot_factor_prob": 0.509521484375,
+    "noisy_single_shot_factor_prob": 0.445068359375,
+    "hellinger_fidelity": 0.9190920166886625
+  },
+  "continued_fractions_table": [
+    {
+      "bitstring": "000",
+      "decimal_y": 0,
+      "phase_estimate": 0.0,
+      "continued_fraction": "0/1",
+      "candidate_period_r": 1,
+      "factors": [],
+      "status": "trivial_zero_phase"
+    },
+    {
+      "bitstring": "001",
+      "decimal_y": 1,
+      "phase_estimate": 0.125,
+      "continued_fraction": "1/8",
+      "candidate_period_r": 8,
+      "factors": [],
+      "status": "inconclusive"
+    },
+    {
+      "bitstring": "010",
+      "decimal_y": 2,
+      "phase_estimate": 0.25,
+      "continued_fraction": "1/4",
+      "candidate_period_r": 4,
+      "factors": [
+        3,
+        5
+      ],
+      "status": "success_factors_found"
+    },
+    {
+      "bitstring": "011",
+      "decimal_y": 3,
+      "phase_estimate": 0.375,
+      "continued_fraction": "3/8",
+      "candidate_period_r": 8,
+      "factors": [],
+      "status": "inconclusive"
+    },
+    {
+      "bitstring": "100",
+      "decimal_y": 4,
+      "phase_estimate": 0.5,
+      "continued_fraction": "1/2",
+      "candidate_period_r": 2,
+      "factors": [],
+      "status": "harmonic_reduced_fraction"
+    },
+    {
+      "bitstring": "101",
+      "decimal_y": 5,
+      "phase_estimate": 0.625,
+      "continued_fraction": "5/8",
+      "candidate_period_r": 8,
+      "factors": [],
+      "status": "inconclusive"
+    },
+    {
+      "bitstring": "110",
+      "decimal_y": 6,
+      "phase_estimate": 0.75,
+      "continued_fraction": "3/4",
+      "candidate_period_r": 4,
+      "factors": [
+        3,
+        5
+      ],
+      "status": "success_factors_found"
+    },
+    {
+      "bitstring": "111",
+      "decimal_y": 7,
+      "phase_estimate": 0.875,
+      "continued_fraction": "7/8",
+      "candidate_period_r": 8,
+      "factors": [],
+      "status": "inconclusive"
+    }
+  ],
+  "resource_scaling_table": [
+    {
+      "target": "Toy RSA N = 15 (4-bit)",
+      "bit_length": 4,
+      "logical_qubits": 5,
+      "two_qubit_or_toffoli_gates": 11,
+      "circuit_depth": 18,
+      "physical_qubits_surface_code": 5,
+      "feasible_today": true,
+      "notes": "Runs directly on NISQ hardware (e.g., ibm_brisbane) without QEC"
+    },
+    {
+      "target": "Toy RSA N = 21 (5-bit)",
+      "bit_length": 5,
+      "logical_qubits": 7,
+      "two_qubit_or_toffoli_gates": 28,
+      "circuit_depth": 42,
+      "physical_qubits_surface_code": 7,
+      "feasible_today": true,
+      "notes": "Demonstrable on current superconducting/trapped-ion processors"
+    },
+    {
+      "target": "RSA-2048 (Internet TLS / PKI)",
+      "bit_length": 2048,
+      "logical_qubits": 4099,
+      "two_qubit_or_toffoli_gates": 2700000000,
+      "circuit_depth": 1800000000,
+      "physical_qubits_surface_code": 20000000,
+      "feasible_today": false,
+      "notes": "Requires ~20M physical qubits (d=27 surface code, ~8 hr runtime; Gidney & Ekera 2021)"
+    },
+    {
+      "target": "ECC P-256 (Elliptic Curve DLP)",
+      "bit_length": 256,
+      "logical_qubits": 2330,
+      "two_qubit_or_toffoli_gates": 126000000000,
+      "circuit_depth": 90000000000,
+      "physical_qubits_surface_code": 6000000,
+      "feasible_today": false,
+      "notes": "Requires fewer logical qubits than RSA-2048 (Roetteler et al. 2017)"
+    },
+    {
+      "target": "NIST ML-KEM-768 (Kyber Ring-LWE)",
+      "bit_length": 256,
+      "logical_qubits": 0,
+      "two_qubit_or_toffoli_gates": 0,
+      "circuit_depth": 0,
+      "physical_qubits_surface_code": 0,
+      "feasible_today": false,
+      "notes": "Immune to Shor's QFT period-finding; best quantum lattice sieve costs ~2^165 ops"
+    }
+  ]
+}
